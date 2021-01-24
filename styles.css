@@ -44,7 +44,7 @@ body{
 
 .semi{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .poste{
@@ -123,6 +123,8 @@ body{
 }
 
 .ex_professionnelles>div:last-child{
+    position: relative;
+    padding-left: 25px;
     /* color: red; */
     /* display: inline-block; */
     /* flex-wrap: wrap; */
@@ -143,7 +145,50 @@ body{
     width: 100%;
 }
 
-.ex_professionnelles>div:last-child::before{
-    content: "hey";
-    flex-wrap: nowrap;
+.ex_professionnelles .titre{
+    margin: var(--default-size) 0px 0px;
+}
+
+.ex_professionnelles>div:last-child>div:first-child::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #98A8C2;
+}
+
+.ex_professionnelles>div:last-child>div:last-child::before{
+    content: "";
+    position: absolute;
+    top: 118px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #98A8C2;
+}
+
+.ex_professionnelles>div:last-child>div:first-child::after{
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 4px;
+    width: 2px;
+    height: 95px;
+    background-color: #98A8C2;
+}
+
+.ex_professionnelles>div:last-child>div:last-child::after{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 4px;
+    width: 2px;
+    height: 83px;
+    background-color: #98A8C2;
 }
