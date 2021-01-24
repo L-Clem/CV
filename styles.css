@@ -118,8 +118,23 @@ body{
 }
 
 .ex_professionnelles>div:last-child{
-    display: inline-block;
-    /* flex-wrap: nowrap; */
+    /* color: red; */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.section{
+    width: 100%;
+}
+
+.titre_section{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color: orange; */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
     width: 100%;
 }
 
