@@ -71,7 +71,7 @@ body{
     padding: 0% var(--padding-a4);
     width: auto;
     height: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     display: flex;
     flex-wrap: wrap;
 }
