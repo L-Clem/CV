@@ -161,10 +161,22 @@ body{
     background-color: #98A8C2;
 }
 
-.ex_professionnelles>div:last-child>div:last-child::before{
+.ex_professionnelles>div:last-child>div:nth-child(2)::before{
     content: "";
     position: absolute;
     top: 118px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #98A8C2;
+}
+
+.ex_professionnelles>div:last-child>div:last-child::before{
+    content: "";
+    position: absolute;
+    top: 235px;
     left: 0px;
     width: 6px;
     height: 6px;
@@ -183,12 +195,81 @@ body{
     background-color: #98A8C2;
 }
 
-.ex_professionnelles>div:last-child>div:last-child::after{
+.ex_professionnelles>div:last-child>div:nth-child(2)::after{
     content: "";
     position: absolute;
     top: 120px;
     left: 4px;
     width: 2px;
-    height: 83px;
+    height: 120px;
     background-color: #98A8C2;
+}
+
+.ex_professionnelles>div:last-child>div:last-child::after{
+    content: "";
+    position: absolute;
+    top: 235px;
+    left: 4px;
+    width: 2px;
+    height: 60px;
+    background-color: #98A8C2;
+}
+
+.education{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--default-size) var(--padding-a4);
+    width: 100%;
+    background-color: white;
+}
+
+.education .titre{
+    margin: var(--default-size) 0px 0px;
+}
+
+.education>:last-child{
+    position: relative;
+    padding-left: 25px;
+    /* color: red; */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.education .titre_section{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.education .titre_section>div{
+    width: auto;
+}
+
+.education .logo{
+    width: 80.9px;
+    height: 50px;
+}
+
+.competance{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--default-size) var(--padding-a4);
+    width: 100%;
+    background-color: white;
+}
+.hobbies{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--default-size) var(--padding-a4);
+    width: 100%;
+    background-color: white;
 }
