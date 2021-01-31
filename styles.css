@@ -92,7 +92,7 @@ body{
 .presentation div div {
     width: 100%;
     flex-wrap: wrap;
-    height: 50px;
+    height: 55px;
     align-content: space-between;
 }
 
@@ -264,6 +264,41 @@ body{
     width: 100%;
     background-color: white;
 }
+
+.competance .semi_gras{
+    height: fit-content;
+}
+
+#competances{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#competances div div{
+    margin: var(--default-size) 0px 0px;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90%;
+    height: 15px;
+}
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 0px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset; */
+}
+progress::-webkit-progress-value {
+    background-color: #A1E2F7;   
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress::-moz-progress-bar {
+    background-color: #A1E2F7;   
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
 .hobbies{
     width: auto;
     height: auto;
