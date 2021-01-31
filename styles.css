@@ -96,6 +96,11 @@ body{
     align-content: space-between;
 }
 
+.presentation div div:last-child{
+    display: flex;
+    align-content: space-around;
+}
+
 .presentation div:last-child{
     justify-content: flex-end;
     width: auto;
@@ -176,7 +181,7 @@ body{
 .ex_professionnelles>div:last-child>div:last-child::before{
     content: "";
     position: absolute;
-    top: 235px;
+    top: 234px;
     left: 0px;
     width: 6px;
     height: 6px;
@@ -299,6 +304,28 @@ progress::-moz-progress-bar {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
+.education>div:last-child:before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #98A8C2;
+}
+
+.education>div:last-child::after{
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 4px;
+    width: 2px;
+    height: 50px;
+    background-color: #98A8C2;
+}
+
 .hobbies{
     width: auto;
     height: auto;
@@ -308,3 +335,4 @@ progress::-moz-progress-bar {
     width: 100%;
     background-color: white;
 }
+
