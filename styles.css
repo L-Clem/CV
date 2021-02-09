@@ -1,9 +1,23 @@
+/* Importation "Monserrat" depuis Google Font
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
+
+/* Définitions de variables récurrentes
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
+
 :root {
-  --default-size: 20px;
-  --padding-a4: 5%;
+  --Default-Size: 20px;
+  --Padding-A4: 5%;
+  --White: #FFFFFF;
+  --Lily_White: #E7F8FF;
+  --Black: #000000;
 }
+
+
+/* Propriétés globales
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
 
 * {
   margin: 0;
@@ -13,12 +27,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 body {
-  background: #585c68;
+  background: #585C68;
   font-size: 14px;
   line-height: 22px;
   color: #555555;
 }
+
+a {
+  color: #555555;
+}
+
+
+/* Classes diverses
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
 
 .titre_section {
   width: auto;
@@ -33,13 +56,13 @@ body {
 
 .gras {
   font-weight: 700;
-  font-size: calc(var(--default-size) + 10px);
+  font-size: calc(var(--Default-Size) + 10px);
   /* text-transform: uppercase; */
 }
 
 .semi_gras {
   font-weight: 500;
-  font-size: var(--default-size);
+  font-size: var(--Default-Size);
 }
 
 .semi {
@@ -57,75 +80,90 @@ body {
   width: 50px;
 }
 
-.cv {
-  width: 800px;
-  height: auto;
-  display: flex;
-  margin: 50px auto;
-}
+
+
+/* A4 simulation
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
 
 .a4 {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   height: auto;
   background: white;
+  width: 800px;
+  margin: 50px auto;
 }
 
-.presentation {
-  padding: 0% var(--padding-a4);
-  width: auto;
-  height: auto;
-  margin-top: 15%;
+
+/* Catégories
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+.categorie{
+  padding: var(--Default-Size) var(--Padding-A4);
   display: flex;
   flex-wrap: wrap;
-}
-
-.presentation svg {
-  margin: var(--default-size) 0px;
-}
-
-.presentation div {
-  display: flex;
-}
-
-.presentation div div {
   width: 100%;
-  flex-wrap: wrap;
-  height: 55px;
-  align-content: space-between;
+  height: auto;
+  background-color: var(--White);
 }
 
-.presentation div div:last-child {
+.categorie#presentation {
+  margin-top: 15%;
+}
+
+.categorie#ex_professionnelles {
+  background-color: var(--Lily_White);
+}
+
+
+/* Présentation
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+#presentation div {
+  display: flex;
+  height: 60px;
+}
+
+#presentation div div {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  height: auto;
+  align-content: space-around;
+}
+
+#presentation div div:last-child {
   display: flex;
   align-content: space-around;
 }
 
-.presentation div:last-child {
+#presentation div:last-child {
   justify-content: flex-end;
   width: auto;
 }
 
-.profil {
-  padding: 0% var(--padding-a4);
-  width: 100%;
+#presentation>svg {
+  margin: var(--Default-Size) 0 0 0;
 }
+
+#presentation ul svg {
+  fill: var(--Black);
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
 
 .profil div:last-child {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: calc(var(--default-size) / 2) 0px var(--default-size);
+  /* margin: calc(var(--default-size) / 2) 0px var(--default-size); */
 }
 
-.ex_professionnelles {
-  display: flex;
-  flex-wrap: wrap;
-  padding: var(--default-size) var(--padding-a4);
-  width: 100%;
-  background-color: #e5f8fe;
-}
 
 .ex_professionnelles > div:last-child {
   position: relative;
@@ -151,7 +189,7 @@ body {
 }
 
 .ex_professionnelles .titre {
-  margin: var(--default-size) 0px 0px;
+  margin: var(--Default-Size) 0px 0px;
 }
 
 .ex_professionnelles > div:last-child > div:first-child::before {
@@ -220,18 +258,10 @@ body {
   background-color: #98a8c2;
 }
 
-.education {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: var(--default-size) var(--padding-a4);
-  width: 100%;
-  background-color: white;
-}
+
 
 .education .titre {
-  margin: var(--default-size) 0px 0px;
+  margin: var(--Default-Size) 0px 0px;
 }
 
 .education > :last-child {
@@ -282,15 +312,6 @@ body {
   background-color: #98a8c2;
 }
 
-.competence {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: var(--default-size) var(--padding-a4);
-  width: 100%;
-  background-color: white;
-}
 
 .competence .semi_gras {
   height: fit-content;
@@ -303,7 +324,7 @@ body {
 }
 
 #competences div div {
-  margin: var(--default-size) 0px 0px;
+  margin: var(--Default-Size) 0px 0px;
 }
 
 progress {
@@ -326,21 +347,12 @@ progress::-moz-progress-bar {
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
-.hobbies {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: var(--default-size) var(--padding-a4);
-  width: 100%;
-  background-color: white;
-}
 
 .hobbies ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: var(--default-size) 0px;
+  margin: var(--Default-Size) 0px;
 }
 
 .hobbies ul li {
