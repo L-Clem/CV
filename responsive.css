@@ -1,4 +1,4 @@
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 550px) {
   /* A4 simulation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
@@ -13,6 +13,11 @@ ________________________________________________________________________________
 
   /* Présentation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
+  #presentation > div * {
+    margin: 5px 0;
+    align-items: center;
+    text-align: center;
+  }
 
   #presentation div {
     display: flex;
@@ -21,19 +26,19 @@ ________________________________________________________________________________
     justify-content: center;
   }
 
-  #presentation div div h1 {
+  #presentation > div > div > h1 {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
+
+  #presentation > div > ul {
+    width: auto;
+    justify-content: space-around;
+  }
 }
 
-
-
-
-
-
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
   /* A4 simulation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
@@ -46,4 +51,18 @@ ________________________________________________________________________________
     margin: 50px auto;
   }
 
+  /* Présentation
+__________________________________________________________________________________________________________________________________________________________________________________________________*/
+  #presentation > div * {
+    margin: 0 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #presentation > div > div {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

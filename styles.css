@@ -3,18 +3,16 @@ ________________________________________________________________________________
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-
 /* Définitions de variables récurrentes
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
 :root {
   --Default-Size: 20px;
   --Padding-A4: 5%;
-  --White: #FFFFFF;
-  --Lily_White: #E7F8FF;
+  --White: #ffffff;
+  --Lily_White: #e7f8ff;
   --Black: #000000;
 }
-
 
 /* Propriétés globales
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
@@ -27,9 +25,8 @@ ________________________________________________________________________________
   font-family: "Montserrat", sans-serif;
 }
 
-
 body {
-  background: #585C68;
+  background: #585c68;
   font-size: 14px;
   line-height: 22px;
   color: #555555;
@@ -38,7 +35,6 @@ body {
 a {
   color: #555555;
 }
-
 
 /* Classes diverses
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
@@ -80,8 +76,6 @@ ________________________________________________________________________________
   width: 50px;
 }
 
-
-
 /* A4 simulation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
@@ -94,11 +88,10 @@ ________________________________________________________________________________
   margin: 50px auto;
 }
 
-
 /* Catégories
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-.categorie{
+.categorie {
   padding: var(--Default-Size) var(--Padding-A4);
   display: flex;
   flex-wrap: wrap;
@@ -115,16 +108,15 @@ ________________________________________________________________________________
   background-color: var(--Lily_White);
 }
 
-
 /* Présentation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-#presentation div {
+#presentation > div {
   display: flex;
   height: 60px;
 }
 
-#presentation div div {
+#presentation > div > div {
   display: flex;
   /* width: 100%; */
   flex-wrap: wrap;
@@ -132,29 +124,29 @@ ________________________________________________________________________________
   align-content: space-around;
 }
 
-#presentation div div:last-child {
+#presentation > div > ul {
   display: flex;
+  flex-wrap: wrap;
   align-content: space-around;
-}
-
-#presentation div:last-child {
-  justify-content: flex-end;
-  width: auto;
-}
-
-#presentation>svg {
-  margin: var(--Default-Size) 0 0 0;
+  width: min-content;
 }
 
 #presentation ul svg {
   fill: var(--Black);
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  margin: 0 7px;
 }
 
+#presentation li {
+  display: flex;
+  flex-wrap: nowrap;
+}
 
-
-
+#presentation > svg {
+  margin: var(--Default-Size) 0 0 0;
+}
 
 .profil div:last-child {
   display: flex;
@@ -163,7 +155,6 @@ ________________________________________________________________________________
   align-items: center;
   /* margin: calc(var(--default-size) / 2) 0px var(--default-size); */
 }
-
 
 .ex_professionnelles > div:last-child {
   position: relative;
@@ -258,8 +249,6 @@ ________________________________________________________________________________
   background-color: #98a8c2;
 }
 
-
-
 .education .titre {
   margin: var(--Default-Size) 0px 0px;
 }
@@ -312,7 +301,6 @@ ________________________________________________________________________________
   background-color: #98a8c2;
 }
 
-
 .competence .semi_gras {
   height: fit-content;
 }
@@ -346,7 +334,6 @@ progress::-moz-progress-bar {
   background-color: #a1e2f7;
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
-
 
 .hobbies ul {
   width: 100%;
