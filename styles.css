@@ -13,6 +13,9 @@ ________________________________________________________________________________
   --White: #ffffff;
   --Lily_White: #e7f8ff;
   --Black: #000000;
+  --Nepal: #8EABC1;
+  --Gallery: #EFEFEF;
+  --Sail: #B8E0F9; /* #a1e2f7; */
 }
 
 
@@ -39,19 +42,27 @@ a {
 }
 
 
-/* Classes diverses
+/* Classes & ID divers
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
+#gras {
+  font-weight: 700;
+  font-size: calc(var(--Default-Size) + 10px);
+}
 
 .titre_categorie {
   font-weight: 500;
   font-size: var(--Default-Size);
+  height: fit-content;
 }
 
 .titre_section {
-  width: auto;
   display: flex;
   flex-wrap: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .titre {
@@ -59,40 +70,19 @@ ________________________________________________________________________________
   font-size: 16px;
 }
 
-.gras {
-  font-weight: 700;
-  font-size: calc(var(--Default-Size) + 10px);
-  /* text-transform: uppercase; */
-}
-
-
-.semi {
+.date {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .poste {
   font-weight: lighter;
-  margin: 2px 0px 5px;
+  margin: 0 0 5px;
 }
 
 .logo {
   height: 50px;
   width: 50px;
-}
-
-.section {
-  width: 100%;
-}
-
-.titre_section {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  /* color: orange; */
-  /* display: inline-block; */
-  /* flex-wrap: wrap; */
-  width: 100%;
 }
 
 
@@ -187,6 +177,7 @@ ________________________________________________________________________________
   float: left; 
   border-radius: 50%; 
   width: 125px;
+  margin: 10px 0;
 }
 
 #profil p {
@@ -199,103 +190,99 @@ ________________________________________________________________________________
 /* Expériences professionnelles
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-.ex_professionnelles > div:last-child {
+#ex_professionnelles > div:last-child {
   position: relative;
   padding-left: 25px;
-  /* color: red; */
-  /* display: inline-block; */
-  /* flex-wrap: wrap; */
-  width: 100%;
+  /* width: 100%; */
 }
 
-.ex_professionnelles .titre {
+#ex_professionnelles .titre {
   margin: var(--Default-Size) 0px 0px;
 }
 
-.ex_professionnelles > div:last-child > div:first-child::before {
+#ex_professionnelles p {
+  width: calc(100% - 50px);
+}
+
+/* Créer les ronds */
+#ex_professionnelles > div:last-child > div:first-child::before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: calc(20px + 8px - 3px);
   left: 0px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid white;
-  background-color: #98a8c2;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
 }
 
-.ex_professionnelles > div:last-child > div:nth-child(2)::before {
+#ex_professionnelles > div:last-child > div:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 118px;
+  top: 117px;
   left: 0px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid white;
-  background-color: #98a8c2;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
 }
 
-.ex_professionnelles > div:last-child > div:last-child::before {
+#ex_professionnelles > div:last-child > div:last-child::before {
   content: "";
   position: absolute;
-  top: 234px;
+  top: 231px;
   left: 0px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid white;
-  background-color: #98a8c2;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
 }
 
-.ex_professionnelles > div:last-child > div:first-child::after {
+/* Créer les lignes verticales */
+#ex_professionnelles > div:last-child > div:first-child::after {
   content: "";
   position: absolute;
-  top: 33px;
+  top: calc(20px + 8px + 6px);
   left: 4px;
   width: 2px;
-  height: 95px;
-  background-color: #98a8c2;
+  height: 90px;
+  background-color: var(--Nepal);
 }
 
-.ex_professionnelles > div:last-child > div:nth-child(2)::after {
+#ex_professionnelles > div:last-child > div:nth-child(2)::after {
   content: "";
   position: absolute;
   top: 120px;
   left: 4px;
   width: 2px;
-  height: 120px;
-  background-color: #98a8c2;
+  height: 117px;
+  background-color: var(--Nepal);
 }
 
-.ex_professionnelles > div:last-child > div:last-child::after {
+#ex_professionnelles > div:last-child > div:last-child::after {
   content: "";
   position: absolute;
   top: 235px;
   left: 4px;
   width: 2px;
-  height: 60px;
-  background-color: #98a8c2;
+  height: 57px;
+  background-color: var(--Nepal);
 }
 
 
 /* Éducation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-.education .titre {
-  margin: var(--Default-Size) 0px 0px;
-}
-
-.education > :last-child {
+#education > :last-child {
   position: relative;
   padding-left: 25px;
-  /* color: red; */
-  /* display: inline-block; */
-  /* flex-wrap: wrap; */
   width: 100%;
 }
 
-.education .titre_section {
+#education .titre_section {
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -303,16 +290,21 @@ ________________________________________________________________________________
   flex-wrap: nowrap;
 }
 
-.education .titre_section > div {
+#education .titre {
+  margin: var(--Default-Size) 0px 0px;
+}
+
+#education .titre_section > div {
   width: auto;
 }
 
-.education .logo {
+#education img {
   width: 80.9px;
   height: 50px;
 }
 
-.education > div:last-child:before {
+/* Créer les ronds */
+#education > div:last-child:before {
   content: "";
   position: absolute;
   top: 25px;
@@ -320,37 +312,37 @@ ________________________________________________________________________________
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid white;
-  background-color: #98a8c2;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
 }
 
-.education > div:last-child::after {
+/* Créer les lignes verticales */
+#education > div:last-child::after {
   content: "";
   position: absolute;
   top: 33px;
   left: 4px;
   width: 2px;
   height: 77px;
-  background-color: #98a8c2;
+  background-color: var(--Nepal);
 }
 
 
 /* Compétances
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-
-.competence .semi_gras {
-  height: fit-content;
-}
-
-#competences {
+#competances>div{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-#competences div div {
-  margin: var(--Default-Size) 0px 0px;
+#competances>div>div {
+  width: 50%;
+}
+
+#competances>div>div>div {
+  margin: var(--Default-Size) 0 0;
 }
 
 progress {
@@ -360,16 +352,15 @@ progress {
   height: 15px;
 }
 progress::-webkit-progress-bar {
-  background-color: #eee;
+  background-color: var(--Gallery);
   border-radius: 0px;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset; */
 }
 progress::-webkit-progress-value {
-  background-color: #a1e2f7;
+  background-color: var(--Sail);
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 progress::-moz-progress-bar {
-  background-color: #a1e2f7;
+  background-color: var(--Sail);
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
@@ -378,42 +369,42 @@ progress::-moz-progress-bar {
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
 
-.hobbies ul {
+#hobbies ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin: var(--Default-Size) 0px;
 }
 
-.hobbies ul li {
+#hobbies li {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80px;
   height: 80px;
-  border: 2px solid #a1e2f7;
+  border: 2px solid var(--Sail);
   border-radius: 50%;
   position: relative;
-  color: #a1e2f7;
+  color: var(--Sail);
 }
 
-.hobbies ul li svg {
+#hobbies svg {
   width: 60%;
   height: 60%;
   /* fill: #0bb5f4; */
-  fill: #a1e2f7;
+  fill: var(--Sail);
 }
 
-.hobbies ul li:before {
+#hobbies li:before {
   content: "";
   position: absolute;
   top: 40px;
   right: -102px;
   width: 100px;
   height: 2px;
-  background: #a1e2f7;
+  background: var(--Sail);
 }
 
-.hobbies ul li:last-child:before {
+#hobbies li:last-child:before {
   display: none;
 }
