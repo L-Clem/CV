@@ -208,7 +208,7 @@ ________________________________________________________________________________
 #ex_professionnelles > div:last-child > div:first-child::before {
   content: "";
   position: absolute;
-  top: calc(20px + 8px - 3px);
+  top: calc(20px + 8px - 3px) ;
   left: 0px;
   width: 6px;
   height: 6px;
