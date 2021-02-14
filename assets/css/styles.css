@@ -193,7 +193,6 @@ ________________________________________________________________________________
 #ex_professionnelles > div:last-child {
   position: relative;
   padding-left: 25px;
-  /* width: 100%; */
 }
 
 #ex_professionnelles .titre {
@@ -204,11 +203,10 @@ ________________________________________________________________________________
   width: calc(100% - 50px);
 }
 
-/* Créer les ronds */
+/* Créer les cercles dans la "section" #ex_professionnelles */
 #ex_professionnelles > div:last-child > div:first-child::before {
   content: "";
   position: absolute;
-  top: calc(20px + 8px - 3px) ;
   left: 0px;
   width: 6px;
   height: 6px;
@@ -220,7 +218,7 @@ ________________________________________________________________________________
 #ex_professionnelles > div:last-child > div:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 117px;
+
   left: 0px;
   width: 6px;
   height: 6px;
@@ -232,7 +230,6 @@ ________________________________________________________________________________
 #ex_professionnelles > div:last-child > div:last-child::before {
   content: "";
   position: absolute;
-  top: 231px;
   left: 0px;
   width: 6px;
   height: 6px;
@@ -241,34 +238,28 @@ ________________________________________________________________________________
   background-color: var(--Nepal);
 }
 
-/* Créer les lignes verticales */
+/* Créer les lignes verticales dans la "section" #ex_professionnelles */
 #ex_professionnelles > div:last-child > div:first-child::after {
   content: "";
   position: absolute;
-  top: calc(20px + 8px + 6px);
   left: 4px;
   width: 2px;
-  height: 90px;
   background-color: var(--Nepal);
 }
 
 #ex_professionnelles > div:last-child > div:nth-child(2)::after {
   content: "";
   position: absolute;
-  top: 120px;
   left: 4px;
   width: 2px;
-  height: 117px;
   background-color: var(--Nepal);
 }
 
 #ex_professionnelles > div:last-child > div:last-child::after {
   content: "";
   position: absolute;
-  top: 235px;
   left: 4px;
   width: 2px;
-  height: 57px;
   background-color: var(--Nepal);
 }
 
@@ -303,11 +294,10 @@ ________________________________________________________________________________
   height: 50px;
 }
 
-/* Créer les ronds */
+/* Créer le cercle dans la "section" #education */
 #education > div:last-child:before {
   content: "";
   position: absolute;
-  top: 25px;
   left: 0px;
   width: 6px;
   height: 6px;
@@ -316,32 +306,30 @@ ________________________________________________________________________________
   background-color: var(--Nepal);
 }
 
-/* Créer les lignes verticales */
+/* Créer la ligne verticale dans la "section" #education */
 #education > div:last-child::after {
   content: "";
   position: absolute;
-  top: 33px;
   left: 4px;
   width: 2px;
-  height: 77px;
   background-color: var(--Nepal);
 }
 
 
-/* Compétances
+/* Compétences
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-#competances>div{
+#competences>div{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-#competances>div>div {
+#competences>div>div {
   width: 50%;
 }
 
-#competances>div>div>div {
+#competences>div>div>div {
   margin: var(--Default-Size) 0 0;
 }
 
@@ -391,7 +379,6 @@ ________________________________________________________________________________
 #hobbies svg {
   width: 60%;
   height: 60%;
-  /* fill: #0bb5f4; */
   fill: var(--Sail);
 }
 
@@ -399,8 +386,6 @@ ________________________________________________________________________________
   content: "";
   position: absolute;
   top: 40px;
-  right: -102px;
-  width: 100px;
   height: 2px;
   background: var(--Sail);
 }

@@ -1,3 +1,4 @@
+// Fonction de vérification de la parité d'un nombre.
 function estPair(nombre) {
     if (nombre % 2 == 0)
         return true;
@@ -5,42 +6,80 @@ function estPair(nombre) {
         return false;
 };
 
+// Fonction d'ajout de Rule CSS.
+function insertCSS(selecteur, propriete) {
+    styleS.insertRule(selecteur + '{' + propriete + '}', 1);
+};
 
-// let ex_pro = document.querySelector("#ex_professionnelles");
-// let cercles = ex_pro.querySelectorAll("div:last-child div::before");
-// let vLignes = ex_pro.querySelectorAll("div:last-child div::after");
-// let sections = ex_pro.querySelectorAll("div:last-child div");
+let styleS = document.styleSheets[0];
 
-let totalHauteur = 25;
+// Arrays contenants les sélecteurs CSS des cercles et lignes verticales d'ornement de la "section" #ex_professionnelles.
+let cercles = ["#ex_professionnelles > div:last-child > div:first-child::before", "#ex_professionnelles > div:last-child > div:nth-child(2)::before", "#ex_professionnelles > div:last-child > div:last-child::before"];
+let vLignes = ["#ex_professionnelles > div:last-child > div:first-child::after", "#ex_professionnelles > div:last-child > div:nth-child(2)::after", "#ex_professionnelles > div:last-child > div:last-child::after"];
 
-document.stylesheet[0].insertRule(rule [, index])
+// Variable contenants le sélecteur CSS des lignes d'ornement horizontales de la "section" #hobbies.
+let hLignes = "#hobbies li:before";
+
+// Variables contenants le sélecteur CSS du cercle et de la ligne verticale d'ornement de la "section" #education.
+let cercle = "#education > div:last-child::before";
+let vLigne = "#education > div:last-child::after";
+
+// Variable de positionnement (top:) CSS pour les cercles et lignes d'ornement.
+let totalHauteur = 26;
+
+let ligneCompteur = 1;
+let cercleCompteur = 0;
 
 
 
 function resize() {
+
+    // Positionne les cercles et lignes verticales d'ornement de la "section" #ex_professionnelles.
     for (element = 0; element <= 5; element++) {
+
+        let section = document.querySelectorAll("#ex_professionnelles > div:last-child > div");
+        // Sélectionne un cercles si pair :
         if (estPair(element) == true) {
             if (element === 0) {
-                cercles[element].style.top = `${totalHauteur}px`;
+                insertCSS(cercles[0], `top: ${totalHauteur}px`);
+            } else {
+                insertCSS(cercles[element - cercleCompteur], `top: ${totalHauteur}px`);
             }
-            else {
-                cercles[element - 1].style.top = `${totalHauteur - 3}px`;
-            }
+            cercleCompteur++;
         }
+        // Sélectionne une ligne si impair :
         else {
-            if (element === 6) {
-                vLignes[element - 1].style.top = `${totalHauteur}px`;
-                vLignes[element - 1].style.height = `${totalHauteur - sections[element - 1].offsetHeight}px`;
+            if (element === 5) {
+                let hauteurLigne = section[element - ligneCompteur].offsetHeight - 20 - 6 - 5;
+                insertCSS(vLignes[element - 3], `top: ${totalHauteur + 5}px`);
+                insertCSS(vLignes[element - 3], `height: ${hauteurLigne}px`);
+            } else {
+                let hauteurLigne = section[element - ligneCompteur].offsetHeight;
+                insertCSS(vLignes[element - ligneCompteur], `top: ${totalHauteur + 5}px`);
+                insertCSS(vLignes[element - ligneCompteur], `height: ${hauteurLigne}px`);
+                totalHauteur += hauteurLigne;
             }
-            else {
-                vLignes[element - 1].style.top = `${totalHauteur}px`;
-                vLignes[element - 1].style.height = `${totalHauteur - sections[element - 1].offsetHeight + 20 + 8}px`;
-                totalHauteur += vLignes[element - 1].offsetHeight;
-            }
-        }
-    }
-}
+            ligneCompteur++;
+        };
+    };
+
+    // Variable de positionnement (top:) CSS pour le cercle et la ligne verticale d'ornement.
+    let hauteur = 26;
+    // Positionne le cercle et laligne verticale d'ornement de la "section" #education.
+    let section = document.querySelectorAll("#education > div:last-child > div");
+    // Pour le cercle :
+    insertCSS(cercle, `top: ${hauteur}px`);
+    // Pour la ligne :
+    let hauteurLigne = section[0].offsetHeight - 20 - 6 - 5;
+    insertCSS(vLigne, `top: ${hauteur + 5}px`);
+    insertCSS(vLigne, `height: ${hauteurLigne}px`);
 
 
-// console.log(rectangle[element].offsetHeight, );
-// height += rectangle[element].offsetHeight;
+
+    // Positionne les lignes horizontales d'ornement de la "section" #hobbies.
+    let icone = document.querySelectorAll("#hobbies > ul > li");
+    // Récupère la différence entre la deuxième et la première li en partant de gauche. Cette différence est l'espacement entre les deux éléments.
+    let x = icone[1].offsetLeft - icone[0].offsetLeft - 80;
+    insertCSS(hLignes, `right: -${x + 2}px`);
+    insertCSS(hLignes, `width: ${x}px`);
+};

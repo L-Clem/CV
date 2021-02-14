@@ -76,95 +76,10 @@ ________________________________________________________________________________
     height: auto;
   }
 
-  /* Expériences professionnelles smartphones
+  /* Compétences smartphones
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-  /* Créer les ronds */
-  #ex_professionnelles > div:last-child > div:first-child::before {
-    content: "";
-    position: absolute;
-    top: calc(20px + 8px - 3px);
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: 182px;
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:last-child::before {
-    content: "";
-    position: absolute;
-    top: 450px;
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  /* Créer les lignes verticales */
-  #ex_professionnelles > div:last-child > div:first-child::after {
-    content: "";
-    position: absolute;
-    top: calc(20px + 8px + 6px);
-    left: 4px;
-    width: 2px;
-    height: 154px;
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    top: 187px;
-    left: 4px;
-    width: 2px;
-    height: 268px;
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:last-child::after {
-    content: "";
-    position: absolute;
-    top: 454px;
-    left: 4px;
-    width: 2px;
-    height: 146px;
-    background-color: var(--Nepal);
-  }
-
-  /* Éducation smartphones
-__________________________________________________________________________________________________________________________________________________________________________________________________*/
-
-  /* Créer les lignes verticales */
-  #education > div:last-child::after {
-    content: "";
-    position: absolute;
-    top: 33px;
-    left: 4px;
-    width: 2px;
-    height: 120px;
-    background-color: var(--Nepal);
-  }
-
-  /* Compétances smartphones
-__________________________________________________________________________________________________________________________________________________________________________________________________*/
-
-  #competances > div > div {
+  #competences > div > div {
     width: 100%;
   }
 
@@ -229,98 +144,10 @@ ________________________________________________________________________________
     height: auto;
   }
 
-  /* Expériences professionnelles tablettes
-__________________________________________________________________________________________________________________________________________________________________________________________________*/
-
-  /* Créer les ronds */
-  #ex_professionnelles > div:last-child > div:first-child::before {
-    content: "";
-    position: absolute;
-    top: calc(20px + 8px - 3px);
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: 138px;
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:last-child::before {
-    content: "";
-    position: absolute;
-    top: 275px;
-    left: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: 2px solid var(--White);
-    background-color: var(--Nepal);
-  }
-
-  /* Créer les lignes verticales */
-  #ex_professionnelles > div:last-child > div:first-child::after {
-    content: "";
-    position: absolute;
-    top: calc(20px + 8px + 6px);
-    left: 4px;
-    width: 2px;
-    height: 110px;
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    top: 142px;
-    left: 4px;
-    width: 2px;
-    height: 138px;
-    background-color: var(--Nepal);
-  }
-
-  #ex_professionnelles > div:last-child > div:last-child::after {
-    content: "";
-    position: absolute;
-    top: 280px;
-    left: 4px;
-    width: 2px;
-    height: 100px;
-    background-color: var(--Nepal);
-  }
-
-  /* Éducation tablettes
-__________________________________________________________________________________________________________________________________________________________________________________________________*/
-
-  /* Créer les lignes verticales */
-  #education > div:last-child::after {
-    content: "";
-    position: absolute;
-    top: 33px;
-    left: 4px;
-    width: 2px;
-    height: 77px;
-    background-color: var(--Nepal);
-  }
-
-  /* Compétances tablettes
-__________________________________________________________________________________________________________________________________________________________________________________________________*/
-
   /* Hobbies tablettes
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
-
+/* 
   #hobbies li:before {
     display: none;
-  }
+  } */
 }
