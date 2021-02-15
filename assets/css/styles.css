@@ -15,7 +15,8 @@ ________________________________________________________________________________
   --Black: #000000;
   --Nepal: #8EABC1;
   --Gallery: #EFEFEF;
-  --Sail: #B8E0F9; /* #a1e2f7; */
+  --Sail: #B8E0F9; /* #a1e2f7;  */
+  --Allports: #327DA0;
 }
 
 
@@ -370,16 +371,16 @@ ________________________________________________________________________________
   align-items: center;
   width: 80px;
   height: 80px;
-  border: 2px solid var(--Sail);
+  border: 2px solid var(--Allports);
   border-radius: 50%;
   position: relative;
-  color: var(--Sail);
+  color: var(--Allports);
 }
 
 #hobbies svg {
   width: 60%;
   height: 60%;
-  fill: var(--Sail);
+  fill: var(--Allports);
 }
 
 #hobbies li:before {
@@ -387,7 +388,7 @@ ________________________________________________________________________________
   position: absolute;
   top: 40px;
   height: 2px;
-  background: var(--Sail);
+  background: var(--Allports);
 }
 
 #hobbies li:last-child:before {
