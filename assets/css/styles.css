@@ -97,6 +97,7 @@ ________________________________________________________________________________
   background: white;
   width: 800px;
   margin: 50px auto;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.534);
 }
 
 
@@ -113,7 +114,7 @@ ________________________________________________________________________________
 }
 
 .categorie#presentation {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .categorie#ex_professionnelles {
@@ -126,7 +127,7 @@ ________________________________________________________________________________
 
 #presentation > div {
   display: flex;
-  height: 60px;
+  height: 80px;
 }
 
 #presentation > div > div {
@@ -340,14 +341,25 @@ progress {
   width: 90%;
   height: 15px;
 }
+
 progress::-webkit-progress-bar {
   background-color: var(--Gallery);
   border-radius: 0px;
 }
+
 progress::-webkit-progress-value {
   background-color: var(--Sail);
   background-size: 35px 20px, 100% 100%, 100% 100%;
+  content: attr(value);
 }
+
+/* Affiche la valeur des progress bar */
+progress::after {
+  content: attr(value)'%';
+  margin-left: 92.5%;
+  font-size: 0.85em;
+}
+
 progress::-moz-progress-bar {
   background-color: var(--Sail);
   background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -365,7 +377,18 @@ ________________________________________________________________________________
   margin: var(--Default-Size) 0px;
 }
 
-#hobbies li {
+#hobbies li  {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 80px;
+  height: auto;
+  position: relative;
+  color: var(--Allports);
+}
+
+#hobbies li>div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -373,17 +396,23 @@ ________________________________________________________________________________
   height: 80px;
   border: 2px solid var(--Allports);
   border-radius: 50%;
-  position: relative;
-  color: var(--Allports);
 }
 
 #hobbies svg {
+  fill: var(--Allports);
   width: 60%;
   height: 60%;
-  fill: var(--Allports);
 }
 
-#hobbies li:before {
+#hobbies p {
+  width: 100%;
+  margin-top: 10px;
+  line-height:normal;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+#hobbies li div:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -391,6 +420,6 @@ ________________________________________________________________________________
   background: var(--Allports);
 }
 
-#hobbies li:last-child:before {
+#hobbies li:last-child div:before {
   display: none;
 }

@@ -18,7 +18,7 @@ let cercles = ["#ex_professionnelles > div:last-child > div:first-child::before"
 let vLignes = ["#ex_professionnelles > div:last-child > div:first-child::after", "#ex_professionnelles > div:last-child > div:nth-child(2)::after", "#ex_professionnelles > div:last-child > div:last-child::after"];
 
 // Variable contenants le sélecteur CSS des lignes d'ornement horizontales de la "section" #hobbies.
-let hLignes = "#hobbies li:before";
+let hLignes = "#hobbies li div:before";
 
 // Variables contenants le sélecteur CSS du cercle et de la ligne verticale d'ornement de la "section" #education.
 let cercle = "#education > div:last-child::before";
@@ -63,9 +63,10 @@ function resize() {
         };
     };
 
+
     // Variable de positionnement (top:) CSS pour le cercle et la ligne verticale d'ornement.
     let hauteur = 26;
-    // Positionne le cercle et laligne verticale d'ornement de la "section" #education.
+    // Positionne le cercle et la ligne verticale d'ornement de la "section" #education.
     let section = document.querySelectorAll("#education > div:last-child > div");
     // Pour le cercle :
     insertCSS(cercle, `top: ${hauteur}px`);
@@ -75,11 +76,17 @@ function resize() {
     insertCSS(vLigne, `height: ${hauteurLigne}px`);
 
 
+    // Positionne les pourcentages de la "section" #competences.
+    // for (element = 0; element <= 3; element++) {
+    //     let barresProgr = document.querySelectorAll("#competences progess");
+    //     insertCSS()
+    // }
+
 
     // Positionne les lignes horizontales d'ornement de la "section" #hobbies.
     let icone = document.querySelectorAll("#hobbies > ul > li");
     // Récupère la différence entre la deuxième et la première li en partant de gauche. Cette différence est l'espacement entre les deux éléments.
-    let x = icone[1].offsetLeft - icone[0].offsetLeft - 80;
-    insertCSS(hLignes, `right: -${x + 2}px`);
+    let x = icone[1].offsetLeft - icone[0].offsetLeft - 80 + 2;
+    insertCSS(hLignes, `right: -${x}px`);
     insertCSS(hLignes, `width: ${x}px`);
 };
