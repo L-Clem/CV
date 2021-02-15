@@ -354,7 +354,7 @@ progress::-webkit-progress-value {
 
 /* Affiche la valeur des progress bar */
 progress::after {
-  content: '??%';
+  content: attr(value)'%';
   margin-left: 90%;
   font-size: 0.85em;
 }
