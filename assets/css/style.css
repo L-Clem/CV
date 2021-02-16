@@ -265,6 +265,14 @@ ________________________________________________________________________________
   background-color: var(--Nepal);
 }
 
+#ex_professionnelles > div:last-child > div:nth-child(2) .logo {
+  padding-bottom: 13.5px;
+}
+
+#ex_professionnelles > div:last-child > div:last-child .logo {
+  padding-bottom: 17px;
+}
+
 
 /* Éducation
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
