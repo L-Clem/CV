@@ -360,13 +360,6 @@ progress::-webkit-progress-value {
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
-/* Affiche la valeur des progress bar */
-progress::after {
-  content: attr(value)'%';
-  margin-left: 90%;
-  font-size: 0.85em;
-}
-
 progress::-moz-progress-bar {
   background-color: var(--Sail);
   background-size: 35px 20px, 100% 100%, 100% 100%;
