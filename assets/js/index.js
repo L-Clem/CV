@@ -69,17 +69,10 @@ function resize() {
         };
     };
     
-    // Pour le cercle :
-    
-    // Pour la ligne :
-    // let hauteurLigne = section[0].offsetHeight - 20 - 6 - 5;*
-    // insertCSS(vLigneEdu, `top: ${hauteur + 5}px`);
-    // insertCSS(vLigneEdu, `height: ${hauteurLigne}px`);
 
     for (element = 0; element <= 3; element++) {
         // Variable de positionnement (top:) CSS pour le cercle et la ligne verticale d'ornement.
         
-
         // Positionne le cercle et la ligne verticale d'ornement de la "section" #education.
         let section = document.querySelectorAll("#education > div:last-child > div");
 
