@@ -41,7 +41,7 @@ function resize() {
 
     // Positionne les cercles et lignes verticales d'ornement de la "section" #ex_professionnelles.
     for (element = 0; element <= 5; element++) {
-        
+
         let section = document.querySelectorAll("#ex_professionnelles > div:last-child > div");
 
         // Sélectionne un cercles si pair :
@@ -68,11 +68,11 @@ function resize() {
             lignesCompteurPro++;
         };
     };
-    
+
 
     for (element = 0; element <= 3; element++) {
         // Variable de positionnement (top:) CSS pour le cercle et la ligne verticale d'ornement.
-        
+
         // Positionne le cercle et la ligne verticale d'ornement de la "section" #education.
         let section = document.querySelectorAll("#education > div:last-child > div");
 
@@ -96,7 +96,7 @@ function resize() {
                 insertCSS(vLignesEdu[element - lignesCompteurEdu], `height: ${hauteurLigne}px`);
                 totalHauteurEdu += hauteurLigne;
             }
-            lignesCompteurEdu++; 
+            lignesCompteurEdu++;
         }
     }
 
