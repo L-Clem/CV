@@ -115,6 +115,7 @@ ________________________________________________________________________________
 
 .categorie#presentation {
   margin-top: 5%;
+  padding: var(--Default-Size) var(--Padding-A4) 0 var(--Padding-A4);
 }
 
 .categorie#ex_professionnelles {
@@ -172,20 +173,54 @@ ________________________________________________________________________________
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 
+#profil>div>div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
 #profil img {
-  float: left; 
   border-radius: 50%; 
   width: 125px;
   margin: 10px 0;
 }
 
 #profil p {
+  padding: 0 25px;
   height: auto;
-  width: 77%;
-  
+  width: calc(100% - 125px);
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#profil>div>div:last-child {
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+#profil h3 {
+  margin: 10px 0 7px 0;
+  text-align: center;
+}
+
+#profil ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6em;
+  flex-wrap: wrap;
+  font-size: 0.75em;
+}
+
+#profil li {
+  list-style: inside;
+  text-align: center;
 }
 
 

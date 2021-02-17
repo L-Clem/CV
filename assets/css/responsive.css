@@ -70,10 +70,24 @@ ________________________________________________________________________________
     justify-content: center;
   }
 
+  #profil>div>div:first-child {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   #profil p {
-    text-align: center;
+    padding: 0;
+    margin: 5px 0;
+    text-align: justify;
     width: 100%;
     height: auto;
+  }
+
+  #profil ul {
+    display: block;
+    line-height: 1.6em;
+    flex-wrap: wrap;
+    font-size: 0.75em;
   }
 
   /* Compétences smartphones
@@ -144,9 +158,16 @@ ________________________________________________________________________________
   /* Profil tablettes
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
+  #profil>div>div:first-child {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   #profil p {
-    text-align: center;
-    width: calc(100% - 125px);
+    padding: 0;
+    margin: 5px 0;
+    text-align: justify;
+    width: 100%;
     height: auto;
   }
 }
