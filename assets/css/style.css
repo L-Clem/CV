@@ -254,7 +254,6 @@ ________________________________________________________________________________
 #ex_professionnelles > div:last-child > div:nth-child(2)::before {
   content: "";
   position: absolute;
-
   left: 0px;
   width: 6px;
   height: 6px;
@@ -333,13 +332,18 @@ ________________________________________________________________________________
   width: auto;
 }
 
-#education img {
+#education .titre_section:first-child img {
+  width: 65px;
+  height: 65px;
+}
+
+#education .titre_section:last-child img {
   width: 80.9px;
   height: 50px;
 }
 
-/* Créer le cercle dans la "section" #education */
-#education > div:last-child:before {
+/* Créer les cercles dans la "section" #education */
+#education > div:last-child > div:first-child::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -350,8 +354,27 @@ ________________________________________________________________________________
   background-color: var(--Nepal);
 }
 
-/* Créer la ligne verticale dans la "section" #education */
-#education > div:last-child::after {
+#education > div:last-child > div:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
+}
+
+/* Créer les lignes verticales dans la "section" #education */
+#education > div:last-child > div:first-child::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 2px;
+  background-color: var(--Nepal);
+}
+
+#education > div:last-child > div:last-child::after {
   content: "";
   position: absolute;
   left: 4px;
