@@ -11,10 +11,6 @@
   .categorie#presentation {
     margin-top: 0%;
   }
-
-  .categorie {
-    padding: 13px 20px;
-  }
 }
 
 @media only screen and (max-width: 550px) {
