@@ -65,7 +65,6 @@ ________________________________________________________________________________
 .titre_section {
   display: flex;
   flex-wrap: nowrap;
-  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
