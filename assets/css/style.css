@@ -217,7 +217,7 @@ ________________________________________________________________________________
 }
 
 /* Font Icons */
-#profil > div > div:first-child > div:last-child a:first-of-type{
+#profil > div > div:first-child > div:last-child a:first-of-type {
   margin: 10px 15px 0;
   height: 25px;
 }
@@ -226,7 +226,7 @@ ________________________________________________________________________________
   font-size: 25px;
 }
 
-#profil > div > div:first-child > div:last-child a:last-of-type{
+#profil > div > div:first-child > div:last-child a:last-of-type {
   margin: 10px 15px 0;
   height: 25px;
 }
