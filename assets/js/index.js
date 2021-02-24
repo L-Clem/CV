@@ -4,12 +4,12 @@ function estPair(nombre) {
         return true;
     else
         return false;
-};
+}
 
 // Fonction d'ajout de Rule CSS.
 function insertCSS(selecteur, propriete) {
     styleS.insertRule(selecteur + '{' + propriete + '}', 1);
-};
+}
 
 // Fonction de positionnement des ornements.
 function aligneDeco(n, section, cercles, vLignes) { 
@@ -70,4 +70,4 @@ function resize() {
     let x = icone[1].offsetLeft - icone[0].offsetLeft - 80 + 2;
     insertCSS(hLignes, `right: -${x}px`);
     insertCSS(hLignes, `width: ${x}px`);
-};
+}
