@@ -9,15 +9,15 @@ ________________________________________________________________________________
 :root {
   --Default-Size: 20px;
   --Padding-A4: 5%;
-  --White: #FFFFFF;
-  --Lily_White: #E7F8FF;
+  --White: #ffffff;
+  --Lily_White: #e7f8ff;
   --Black: #000000;
-  --Nepal: #8EABC1;
-  --Gallery: #EFEFEF;
-  --Sail: #B8E0F9; /* #A1E2F7;  */
-  --Allports: #327DA0;
+  --Nepal: #8eabc1;
+  --Gallery: #efefef;
+  --Sail: #b8e0f9; /* #A1E2F7;  */
+  --Allports: #327da0;
   --Emperor: #514649;
-  --Mid_Gray: #5F5F6E;
+  --Mid_Gray: #5f5f6e;
   --Azure_Radiance: #0086e6;
 }
 
@@ -173,7 +173,7 @@ ________________________________________________________________________________
   align-items: center;
 }
 
-#profil> div>div:first-child {
+#profil > div > div:first-child {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -209,25 +209,35 @@ ________________________________________________________________________________
   height: auto;
 }
 
-#profil > div > div:first-child > div:last-child p {
+#profil > div > div:first-child > div:last-child > p {
   text-align: center;
   width: 100%;
   margin: 15px 0 0;
 }
 
-/* Font Icons */
-#profil > div > div:first-child > div:last-child a:first-of-type {
-  margin: 10px 15px 0;
-  height: 25px;
+#icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#icons > div {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  flex-wrap: wrap;
 }
 
-#profil > div > div:first-child > div:last-child a:first-of-type i {
-  font-size: 25px;
+#icons a {
+  margin: 10px 15px 0;
 }
 
-#profil > div > div:first-child > div:last-child a:last-of-type {
-  margin: 10px 15px 0;
-  height: 25px;
+#icons div:first-child i {
+  font-size: 26px;
+}
+
+.hidden {
+  display: none
 }
 
 #profil > div > div:last-child {
@@ -246,7 +256,7 @@ ________________________________________________________________________________
   justify-content: space-between;
   line-height: 1.6em;
   flex-wrap: wrap;
-  font-size: 0.80em;
+  font-size: 0.8em;
 }
 
 #profil li {
@@ -414,41 +424,37 @@ ________________________________________________________________________________
 
 /* Compétences
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
+.categorie#competences {
+  background-color: var(--Lily_White);
+}
+
+#competences h3 {
+  font-weight: 500;
+}
 
 #competences > div {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 0 0 25px;
+  margin: var(--Default-Size) 0 0 0;
 }
 
-#competences > div > div {
-  width: 50%;
+#competences ul {
+  width: 25%;
+  height: auto;
 }
 
-#competences > div > div > div {
-  margin: var(--Default-Size) 0 0;
+#competences li {
+  display: flex;
+  margin: 5px 0;
 }
 
-progress {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 90%;
-  height: 15px;
-}
-
-progress::-webkit-progress-bar {
-  background-color: var(--Gallery);
-  border-radius: 0;
-}
-
-progress::-webkit-progress-value {
-  background-color: var(--Sail);
-  background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-
-progress::-moz-progress-bar {
-  background-color: var(--Sail);
-  background-size: 35px 20px, 100% 100%, 100% 100%;
+#competences svg {
+  width: 18px;
+  height: 18px;
+  margin: 0 7px;
 }
 
 /* Hobbies

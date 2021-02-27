@@ -11,6 +11,17 @@
   .categorie#presentation {
     margin-top: 0%;
   }
+
+  #icons > div {
+    display: flex;
+    width: 20%;
+  }
+
+  .hidden {
+    display: inline;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -81,10 +92,13 @@ ________________________________________________________________________________
     height: auto;
   }
 
+  #icons {
+    justify-content: space-around;
+  }
   #profil > div > div:first-child > div:last-child {
     width: 100%;
   }
-  
+
   #profil > div > div:first-child > div:last-child p {
     margin: 5px 0 0;
   }
@@ -103,8 +117,10 @@ ________________________________________________________________________________
 
   /* Compétences smartphones
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
-
-  #competences > div > div {
+  #competences h3 {
+    margin: 0 0 10px 0;
+  }
+  #competences ul {
     width: 100%;
   }
 
@@ -168,8 +184,7 @@ ________________________________________________________________________________
   /* Profil tablettes
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-
-  #profil > div > div:first-child div:first-child{
+  #profil > div > div:first-child div:first-child {
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -185,7 +200,7 @@ ________________________________________________________________________________
   #profil > div > div:first-child > div:last-child {
     width: 100%;
   }
-  
+
   #profil > div > div:first-child > div:last-child p {
     margin: 5px 0 0;
   }
