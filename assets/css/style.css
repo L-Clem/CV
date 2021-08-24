@@ -139,6 +139,11 @@ ________________________________________________________________________________
   align-content: space-around;
 }
 
+#presentation h2 {
+  padding-top: 5px;
+  width: 100%;
+}
+
 #presentation > div > ul {
   display: flex;
   flex-wrap: wrap;

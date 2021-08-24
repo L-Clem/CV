@@ -61,9 +61,7 @@ ________________________________________________________________________________
   }
 
   #presentation > div > div > h2 {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
   }
 
   #presentation > div > ul {
@@ -95,6 +93,7 @@ ________________________________________________________________________________
   #icons {
     justify-content: space-around;
   }
+
   #profil > div > div:first-child > div:last-child {
     width: 100%;
   }
