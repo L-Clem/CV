@@ -12,6 +12,10 @@
     margin-top: 0%;
   }
 
+  .categorie#competences {
+    margin-top: 8%;
+  }
+
   #icons > div {
     display: flex;
     width: 20%;
