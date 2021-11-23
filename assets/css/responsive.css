@@ -10,10 +10,11 @@
 
   .categorie#presentation {
     margin-top: 0%;
+    padding-bottom: 0px;
   }
-
-  .categorie#competences {
-    margin-top: 8%;
+  
+  #profil > div > div:first-child  {
+    margin-bottom: 5px;
   }
 
   #icons > div {
@@ -22,9 +23,9 @@
   }
 
   .hidden {
-    display: inline;
+    display: block;
     width: 100%;
-    text-align: center;
+    text-align: center; 
   }
 }
 
