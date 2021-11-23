@@ -179,13 +179,22 @@ ________________________________________________________________________________
   align-items: center;
 }
 
-#profil > div > div:first-child {
+#profil > div > div:first-child  {
+  text-align: center;
+  border: 0.1px solid rgba(182, 0, 0, 0.61); 
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  /* display: none; */
+}
+
+#profil > div > div:nth-child(2) {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
-#profil > div > div:first-child > div {
+#profil > div > div:nth-child(2) > div {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -199,7 +208,7 @@ ________________________________________________________________________________
   margin: 10px 0;
 }
 
-#profil > div > div:first-child > div:first-child > p {
+#profil > div > div:nth-child(2) > div:first-child > p {
   padding: 0 25px;
   height: auto;
   width: calc(100% - 125px);
@@ -208,14 +217,14 @@ ________________________________________________________________________________
   font-size: 14px;
 }
 
-#profil > div > div:first-child > div:last-child {
+#profil > div > div:nth-child(2) > div:last-child {
   font-weight: normal;
   justify-content: center;
   width: calc(100% - 125px);
   height: auto;
 }
 
-#profil > div > div:first-child > div:last-child > p {
+#profil > div > div:nth-child(2) > div:last-child > p {
   text-align: center;
   width: 100%;
   margin: 15px 0 0;

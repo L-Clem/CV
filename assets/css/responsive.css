@@ -80,13 +80,13 @@ ________________________________________________________________________________
     justify-content: center;
   }
 
-  #profil > div > div:first-child > div:first-child {
+  #profil > div > div:nth-child(2) > div:first-child {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  #profil > div > div:first-child > div:first-child p {
+  #profil > div > div:nth-child(2) > div:first-child p {
     padding: 0;
     margin: 5px 0;
     text-align: justify;
@@ -98,7 +98,7 @@ ________________________________________________________________________________
     justify-content: space-around;
   }
 
-  #profil > div > div:first-child > div:last-child {
+  #profil > div > div:nth-child(2) > div:last-child {
     width: 100%;
   }
 
@@ -183,12 +183,12 @@ ________________________________________________________________________________
   /* Profil tablettes
 __________________________________________________________________________________________________________________________________________________________________________________________________*/
 
-  #profil > div > div:first-child div:first-child {
+  #profil > div > div:nth-child(2) > div:first-child {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  #profil > div > div:first-child > div:first-child p {
+  #profil > div > div:nth-child(2) > div:first-child p {
     padding: 0;
     margin: 5px 0;
     text-align: justify;
@@ -196,11 +196,11 @@ ________________________________________________________________________________
     height: auto;
   }
 
-  #profil > div > div:first-child > div:last-child {
+  #profil > div > div:nth-child(2) > div:last-child {
     width: 100%;
   }
 
-  #profil > div > div:first-child > div:last-child p {
+  #profil > div > div:nth-child(2) > div:last-child p {
     margin: 5px 0 0;
   }
 
