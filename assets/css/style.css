@@ -333,6 +333,17 @@ ________________________________________________________________________________
   background-color: var(--Nepal);
 }
 
+#ex_professionnelles > div:last-child > div:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+  background-color: var(--Nepal);
+}
+
 #ex_professionnelles > div:last-child > div:last-child::before {
   content: "";
   position: absolute;
@@ -362,6 +373,14 @@ ________________________________________________________________________________
 }
 
 #ex_professionnelles > div:last-child > div:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 2px;
+  background-color: var(--Nepal);
+}
+
+#ex_professionnelles > div:last-child > div:nth-child(4)::after {
   content: "";
   position: absolute;
   left: 4px;

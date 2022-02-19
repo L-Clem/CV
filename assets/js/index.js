@@ -54,8 +54,8 @@ function aligneDeco(numberOfDecorations, section, cercles, vLignes) {
 let styleS = document.styleSheets[0];
 
 // Arrays contenants les sélecteurs CSS des cercles et lignes verticales d'ornement de la "section" #ex_professionnelles.
-let cerclesPro = ["#ex_professionnelles > div:last-child > div:first-child::before", "#ex_professionnelles > div:last-child > div:nth-child(2)::before", "#ex_professionnelles > div:last-child > div:nth-child(3)::before", "#ex_professionnelles > div:last-child > div:last-child::before"];
-let vLignesPro = ["#ex_professionnelles > div:last-child > div:first-child::after", "#ex_professionnelles > div:last-child > div:nth-child(2)::after", "#ex_professionnelles > div:last-child > div:nth-child(3)::after", "#ex_professionnelles > div:last-child > div:last-child::after"];
+let cerclesPro = ["#ex_professionnelles > div:last-child > div:first-child::before", "#ex_professionnelles > div:last-child > div:nth-child(2)::before", "#ex_professionnelles > div:last-child > div:nth-child(3)::before", "#ex_professionnelles > div:last-child > div:nth-child(4)::before", "#ex_professionnelles > div:last-child > div:last-child::before"];
+let vLignesPro = ["#ex_professionnelles > div:last-child > div:first-child::after", "#ex_professionnelles > div:last-child > div:nth-child(2)::after", "#ex_professionnelles > div:last-child > div:nth-child(3)::after", "#ex_professionnelles > div:last-child > div:nth-child(4)::after", "#ex_professionnelles > div:last-child > div:last-child::after"];
 // Arrays contenants le sélecteur CSS du cercle et de la ligne verticale d'ornement de la "section" #education.
 let cerclesEdu = ["#education > div:last-child > div:first-child::before", "#education > div:last-child > div:last-child::before"];
 let vLignesEdu = ["#education > div:last-child > div:first-child::after", "#education > div:last-child > div:last-child::after"];
@@ -68,7 +68,7 @@ let section = [document.querySelectorAll('#ex_professionnelles > div:last-child 
 
 function resize() {
 
-	aligneDeco(7, section[0], cerclesPro, vLignesPro);
+	aligneDeco(9, section[0], cerclesPro, vLignesPro);
 	aligneDeco(3, section[1], cerclesEdu, vLignesEdu);
 
 
