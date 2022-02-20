@@ -17,16 +17,21 @@
     margin-bottom: 5px;
   } */
 
+
   #icons > div {
     display: flex;
     width: 20%;
   }
 
-  /* .hidden {
+  .hidden {
     display: block;
     width: 100%;
     text-align: center; 
-  } */
+  }
+
+  #education {
+    margin-top: 200px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
